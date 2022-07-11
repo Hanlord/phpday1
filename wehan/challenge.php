@@ -10,9 +10,13 @@
 
 </head>
 <body>
-<div id="result"></div>
+<?php
+    $name4 = array ("disney"=>"https://cdn.pixabay.com/photo/2012/11/02/13/02/car-63930__480.jpg", "nintendo"=>"Super Mario", "dragonball"=>"Goku", "pokemon"=>"Pokemon");
+    // echo  $name4['disney'].', ', $name4['nintendo'].', ',$name4['dragonball'].', ',$name4['pokemon'];
+    ?> 
+<!-- <div id="result"></div> -->
 <div class="card" style="width: 18rem;">
-<img src="..." class="card-img-top" alt="...">
+<img src=<?php echo $name4['disney']?> class="card-img-top" alt="...">
 <div class="card-body">
   <h5 class="card-title">Card title</h5>
   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
